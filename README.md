@@ -18,3 +18,18 @@ N/A.
 Yes.
 – Where is the entry point to your project? (src/main/Main.java for example
 src/main/Main.java
+
+
+Project will be a Restaurant Ordering System.
+
+The final product should be able to take and track orders from a GUI.
+
+There should be a Main Menu GUI which leads to either a Place Order Menu where the user can place an order or a
+current orders screen where outstanding orders can be marked as complete causing  them to disappear.  
+
+Orders may consist of multiple foods / drinks that are available for selection from the Menu Screen.
+
+Each Order will be an object of the Order class.
+Each Order object will be made up of Food or Drink Objects that each use the IOrderable interface.
+
+Food and Drink objects will have methods to access the Item's price, name, and a description.
