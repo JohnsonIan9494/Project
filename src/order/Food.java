@@ -1,4 +1,4 @@
-package Order;
+package order;
 
 public class Food implements IOrderable {
 

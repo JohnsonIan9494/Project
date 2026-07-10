@@ -1,4 +1,4 @@
-package Order;
+package order;
 
 public class Drink implements IOrderable {
 
@@ -6,7 +6,7 @@ public class Drink implements IOrderable {
     private final String name;
     private final float price;
     private final String description;
-    private final Boolean isLarge;
+    private final boolean isLarge;
 
     public Drink(String name, float price, String description, Boolean isLarge) {
         this.name = name;
