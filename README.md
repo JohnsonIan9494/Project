@@ -33,3 +33,19 @@ Each order will be an object of the order class.
 Each order object will be made up of Food or Drink Objects that each use the IOrderable interface.
 
 Food and Drink objects will have methods to access the Item's price, name, and a description.
+
+
+SPRINT 3:
+For my final submission, I would like to have a graphical interface with an ordering interface.  The user should be able to add
+different items from the menu to an order including combos.  These combos should be either pre-designed, or custom.  Finally, a
+Total price should be given to the user once the order has been placed.
+
+Pattern 1:  Builder Pattern - src/main/restaurant/builder
+    ComboBuilder is used to build combos consisting of a Food, Drink, and Side.
+        Uses setFood, setDrink, setSide, and setDiscount to build the combo -- contains the "Tool Box" to build a combo
+
+Pattern 2.  Factory Pattern - src/main/restaurant/factory
+    IComboCreator uses ComboBuilder to build 3 different Combos
+        KidsComboCreator - Creates a Kids combo with nuggets, apple juice and applesauce
+        LunchComboCreator - Creates a Lunch Combo with a Burger, Cola, and Fries
+        ValueComboCreator - Creates a Value Combo with a Small Burger, Water, and Side Salad.
