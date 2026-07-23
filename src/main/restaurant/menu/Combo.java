@@ -1,6 +1,6 @@
-package order;
+package main.restaurant.menu;
 
-public class Combo implements IOrderable{
+public class Combo implements IOrderable {
 
     private final Food food;
     private final Drink drink;

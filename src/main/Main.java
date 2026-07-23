@@ -1,9 +1,19 @@
 package main;
 
+import main.restaurant.factory.IComboCreator;
+import main.restaurant.factory.LunchComboCreator;
+import main.restaurant.menu.Combo;
+import main.restaurant.order.Order;
+
 public class Main {
+    public static void main(String[] args) {
+        Order order = new Order(1);
 
-    public static void main(String[] args){
-        System.out.println("Hello World");
+        IComboCreator lunchCreator = new LunchComboCreator();
+        Combo lunch = lunchCreator.createCombo();
+
+        order.addItem(lunch);
+
+        System.out.println("Total: " + order.getTotalPrice());
     }
-
 }

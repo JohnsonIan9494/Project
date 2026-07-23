@@ -1,4 +1,4 @@
-package order;
+package main.restaurant.menu;
 
 public class Drink implements IOrderable {
 

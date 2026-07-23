@@ -1,6 +1,8 @@
-package order;
+package main.restaurant.order;
 
 
+import main.restaurant.menu.Drink;
+import main.restaurant.menu.Food;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;

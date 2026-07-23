@@ -1,4 +1,9 @@
-package order;
+package main.restaurant.builder;
+
+import main.restaurant.menu.Combo;
+import main.restaurant.menu.Drink;
+import main.restaurant.menu.Food;
+import main.restaurant.menu.Side;
 
 public class ComboBuilder {
 

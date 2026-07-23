@@ -1,4 +1,6 @@
-package order;
+package main.restaurant.order;
+
+import main.restaurant.menu.IOrderable;
 
 import java.util.ArrayList;
 import java.util.List;
