@@ -10,14 +10,14 @@ import main.restaurant.menu.Side;
 public class ValueComboCreator implements IComboCreator {
     @Override
     public Combo createCombo() {
-        Food nuggets = new Food("Chicken Nuggets", 3.99f, "5-piece nuggets");
-        Drink juice = new Drink("Apple Juice", 1.49f, "Small apple juice", false);
-        Side applesauce = new Side("Applesauce", 1.29f, "Single-serve applesauce");
+        Food smallBurger = new Food("Small Burger", 3.49f, "Single Patty Burger");
+        Drink water = new Drink("Water", 0.99f, "Bottled Water", false);
+        Side sideSalad = new Side("Side Salad", 1.99f, "Small garden salad");
 
         return new ComboBuilder()
-                .setFood(nuggets)
-                .setDrink(juice)
-                .setSide(applesauce)
+                .setFood(smallBurger)
+                .setDrink(water)
+                .setSide(sideSalad)
                 .setDiscount(.75f)
                 .build();
     }
